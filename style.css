@@ -1,0 +1,157 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Nunito:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Symbols&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sour+Gummy&display=swap');
+
+
+/* 1. General Settings */
+.stApp {
+    background-image: url("https://i.imgur.com/JVR5Zun.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+/* 2. Custom Typography Styles */
+h1, h2, h3 {
+    text-align: center;
+}
+
+.estilo1 {
+    font-family: 'Birthstone' !important;
+    font-size: 3em !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    color: #4A6E4A;
+    display: block; /* Isso fará a quebra de linha */
+}
+
+.estilo2 {
+    font-size: 1.5em !important;
+    font-family: 'Yusei Magic', !important;
+    color: #1f1f2e, !important;
+    display: block; /* Isso fará a quebra de linha */
+}
+
+.estilo3 {
+    font-family: 'Birthstone' !important;
+    font-size: 1.5em !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    color: #4A6E4A;
+    display: block; /* Isso fará a quebra de linha */
+}
+
+h2 {
+    font-family: 'Yusei Magic' !important;
+    font-size: 2.5em !important;
+    color: #4A6E4A !important;
+    margin-bottom: 15px;
+}
+
+/* Subtitle Styling */
+.stMarkdown p {
+    font-family: 'Sour Gummy', cursive !important;
+    font-size: 2em;
+    color: #1f1f2e;
+    text-align: center;
+}
+
+/* 3. Buttons */
+.stButton button {
+    background-color: #B0CFA8; /* Pastel green from balloons */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stButton button:hover {
+    background-color: #7CA48A;
+    transform: scale(1.05);
+}
+
+/* 4. Inputs and Textareas */
+input, textarea, .stTextInput > div > div > input {
+    border: 2px solid #F2B66F; /* Pastel orange from invitation */
+    border-radius: 15px;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(242, 182, 111, 0.05);
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, .stTextInput > div > div > input:focus {
+    outline: none;
+    border-color: #B0CFA8;
+    box-shadow: 0 0 0 3px rgba(176, 207, 168, 0.2);
+}
+
+/* 5. Dataframes and Tables */
+.dataframe {
+    background-color: rgba(176, 207, 168, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* 6. Alert and Info Boxes */
+.stAlert {
+    border-radius: 10px;
+}
+
+.stAlert.success {
+    background-color: rgba(176, 207, 168, 0.2);
+    border-left: 5px solid #B0CFA8;
+}
+
+.stAlert.error {
+    background-color: rgba(242, 109, 109, 0.2);
+    border-left: 5px solid #F26D6D;
+}
+
+/* 7. Decorative Banner Effect */
+.banner {
+    position: relative;
+    overflow: hidden;
+    background-image: "background.png" !important;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(242, 182, 111, 0.2),
+        rgba(242, 182, 111, 0.2) 10px,
+        rgba(176, 207, 168, 0.2) 10px,
+        rgba(176, 207, 168, 0.2) 20px
+    );
+    transform: rotate(-5deg);
+}
+
+/* 8. Animations */
+@keyframes subtle-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.stButton button {
+    animation: subtle-float 2s ease-in-out infinite;
+}
+
+/* 9. Code Blocks */
+pre, code {
+    font-family: 'Nunito', monospace;
+    background-color: rgba(176, 207, 168, 0.1);
+    border: 1px solid #B0CFA8;
+    border-radius: 10px;
+    padding: 15px;
+}
