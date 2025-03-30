@@ -113,7 +113,7 @@ def main():
     #payload = Payload(nome = "PEDRO WILLIAM RIBEIRO DINIZ", chavepix = "07174603637", valor = valor_total, cidade = "SAO PAULO", txtId = "DESCRIÇÃO", fileNameQrcode = "teste.png")
 
     st.markdown('<h2>Chave PIX para Pagamento</h2>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size: 1.5em;">Clique no ícone no canto direito do campo abaixo para copiar a chave!</p>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size: 1.5em;">Copie a chave abaixo!</p>', unsafe_allow_html=True)
     st.code(chavepix, language="text")
 
 
