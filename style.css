@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Birthstone&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+Symbols&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Yusei+Magic&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Sour+Gummy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DynaPuff&display=swap');
 
 
 /* 1. General Settings */
@@ -52,7 +52,7 @@ h2 {
 
 /* Subtitle Styling */
 .stMarkdown p {
-    font-family: 'Sour Gummy', cursive !important;
+    font-family: 'DynaPuff', cursive !important;
     font-size: 2em;
     color: #1f1f2e;
     text-align: center;
