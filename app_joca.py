@@ -11,7 +11,7 @@ from gerador_pix import Payload, gerarPayload, gerarCrc16
 # Configurações iniciais
 CSV_URL = "presentes.csv"  # Substitua pelo URL real
 #nome = "PEDRO WILLIAM RIBEIRO DINIZ"
-#chavepix = "CHAVE PIX"
+chavepix = "08036122650"
 #valor = '1.00'
 #cidade = "BELO HORIZONTE"
 #txtId = "DESCRIÇÃO"
@@ -112,9 +112,9 @@ def main():
     # Gerar QR code para pagamento PIX
     payload = Payload(nome = "PEDRO WILLIAM RIBEIRO DINIZ", chavepix = "07174603637", valor = valor_total, cidade = "SAO PAULO", txtId = "DESCRIÇÃO", fileNameQrcode = "teste.png")
 
-    st.markdown('<h2>Código PIX para Pagamento</h2>', unsafe_allow_html=True)
-    st.markdown('<p style="font-size: 1.5em;">Clique no ícone no canto direito do campo abaixo para copiar o código!</p>', unsafe_allow_html=True)
-    st.code(payload, language="text")
+    st.markdown('<h2>Chave PIX para Pagamento</h2>', unsafe_allow_html=True)
+    st.markdown('<p style="font-size: 1.5em;">Clique no ícone no canto direito do campo abaixo para copiar a chave!</p>', unsafe_allow_html=True)
+    st.code(chavepix, language="text")
 
 
     # Formulário para enviar dados da compra e mensagem
